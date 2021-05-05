@@ -9,7 +9,13 @@ module.exports = {
       'contain': 'contain',
       '50%': '50%',
       '25%': '%25',
-    }
+    },
+    transitionDuration: ['hover', 'focus'],
+    transitionDuration: {
+      '0': '0ms',
+      '2000': '2000ms',
+      '8000':'8000ms',
+    },
   },
   variants: {
     extend: {},

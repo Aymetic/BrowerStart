@@ -3,7 +3,7 @@
     type="text"
     placeholder="type to search..."
     v-model="msg"
-    class="h-9 rounded-full focus:outline-none border-black border-2"
+    class="h-9 w-2/5 pl-3 rounded-l-full focus:outline-none border-black border-2"
   />
 </template>
 

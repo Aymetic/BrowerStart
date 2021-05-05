@@ -1,7 +1,7 @@
 <template>
   <button
     @click="jump"
-    class="mx-2 h-9 w-32 text-white rounded-full focus:outline-none bg-gradient-to-r from-blue-400 via-pink-500 to-yellow-300 bg-25%"
+    class="h-9 w-28 text-white rounded-r-full focus:outline-none bg-gradient-to-r from-blue-400 via-pink-500 to-yellow-300 bg-25% transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110"
   >
     {{ label }}
   </button>
@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     jump() {
-      alert("自己搜去吧");
+      alert("自己搜去吧😀");
       window.open("https://baidu.com", "_blank");
     },
   },
