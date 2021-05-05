@@ -4,16 +4,14 @@
     <button
       @click="
         count++;
-        if (count == 5) alert('别点啦！');
+        alwaysClick(count);
       "
       class="focus:outline-none"
     >
-      可以点我点我试试: {{ count }}
+      点我可以玩~: {{ count }}
     </button>
   </div>
-  <p class="text-center">
-    Edit <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+  <p class="text-center">这本是一个浏览器主页，奈何还没有完工，咕咕咕🕊</p>
 </template>
 
 <script>
@@ -26,6 +24,11 @@ export default {
     return {
       count: 0,
     };
+  },
+  methods: {
+    alwaysClick(count) {
+      if (count % 5 == 0) alert("哎就是玩~");
+    },
   },
 };
 </script>

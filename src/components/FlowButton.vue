@@ -21,8 +21,8 @@ export default {
   },
   methods: {
     jump() {
-      alert("自己搜去吧😀");
-      window.open("https://baidu.com", "_blank");
+      alert("说了正在施工中！自己搜去吧😀");
+      window.open("https://www.baidu.com/s?ie=utf-8&wd=我是傻子", "_blank");
     },
   },
 };
