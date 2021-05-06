@@ -1,9 +1,10 @@
 <template>
   <input
     type="text"
-    placeholder="type to search..."
-    v-model="msg"
-    class="h-9 w-2/5 pl-3 rounded-l-full focus:outline-none border-black border-2"
+    placeholder="Type to search..."
+    v-model="inputVal"
+    v-on:input="valueChanged"
+    class="h-10 w-2/5 pl-3 rounded-l-full focus:outline-none ring-4 ring-indigo-300"
   />
 </template>
 
@@ -12,13 +13,15 @@ export default {
   name: "SearchBar",
   props: {
     label: String,
-    msg: String,
+    inputVal: String,
   },
   data() {
-    return {
-      count: 0,
-    };
+    return {};
   },
-  methods: {},
+  methods: {
+    valueChanged() {
+      this.$emit("valueChanged", this.inputVal);
+    },
+  },
 };
 </script>
