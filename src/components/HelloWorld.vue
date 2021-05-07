@@ -1,17 +1,19 @@
 <template>
-  <h1 class="text-center">{{ msg }}</h1>
+  <h1 class="text-center text-white">{{ msg }}</h1>
   <div class="text-center">
     <button
       @click="
         count++;
         alwaysClick(count);
       "
-      class="focus:outline-none"
+      class="focus:outline-none text-white"
     >
       点我可以玩~: {{ count }}
     </button>
   </div>
-  <p class="text-center">这本是一个浏览器主页，奈何还没有完工，咕咕咕🕊</p>
+  <p class="text-center text-white">
+    这本是一个浏览器主页，奈何还没有完工，咕咕咕🕊
+  </p>
 </template>
 
 <script>

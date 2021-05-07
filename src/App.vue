@@ -30,7 +30,6 @@ export default {
   },
   methods: {
     setBtnWord(data) {
-      console.log("我收到了信息=>" + data);
       this.searchBarVal = data;
     },
   },

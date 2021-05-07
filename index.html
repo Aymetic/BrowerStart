@@ -6,16 +6,39 @@
   <link rel="icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aymeticの起始页</title>
+  <style type="text/css">
+    #bg {
+      /* div位置及大小,所在堆叠层设置 */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-width: 1000px;
+      z-index: -10;
+      /* 背景图片设置 */
+      background-image: url(https://api.xygeng.cn/Bing/);
+      zoom: 1;
+      background-color: #ffff;
+      background-repeat: no-repeat;
+      background-position: center 0;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+    }
+  </style>
 </head>
 
 <body>
+  <div id="bg"></div>
   <div class="text-center">
-    <a href="https://cn.vuejs.org/v2/guide/index.html" target="_blank" class="text-red-400 underline">👉Vue快捷文档</a>
+    <a href="https://v3.cn.vuejs.org/guide/introduction.html" target="_blank"
+      class="text-red-400 underline">👉Vue快捷文档</a>
     ，
     <a href="https://www.tailwindcss.cn/docs" target="_blank" class="text-red-400 underline">TailwindCSS快捷文档👈</a>
   </div>
   <div id="app"></div>
-  <h1 class="text-center text-6xl my-8">施工中⚠</h1>
+  <h1 class="text-center text-7xl my-8 text-white">施工中⚠</h1>
   <script type="module" src="/src/main.js"></script>
 </body>
 

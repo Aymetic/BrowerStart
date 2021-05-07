@@ -1,13 +1,15 @@
 <template>
   <button
+    id="btn"
     @click="jump"
-    class="h-12 w-28 text-white rounded-r-full focus:outline-none bg-gradient-to-r from-blue-400 via-pink-500 to-yellow-300 bg-25%"
+    class="btn h-12 w-28 text-white rounded-r-xl focus:outline-none"
   >
     {{ label }}
   </button>
 </template>
 
 <script>
+import "../css/main.css";
 export default {
   name: "SearchButton",
   props: {

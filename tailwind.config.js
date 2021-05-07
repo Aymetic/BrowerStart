@@ -11,11 +11,9 @@ module.exports = {
       '25%': '%25',
     },
     transitionDuration: ['hover', 'focus'],
-    transitionDuration: {
-      '0': '0ms',
-      '2000': '2000ms',
-      '8000':'8000ms',
-    },
+    backgroundImage: theme => ({
+         'main-img': "url('https://api.xygeng.cn/Bing/')",
+        })
   },
   variants: {
     extend: {},
