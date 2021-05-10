@@ -2,7 +2,7 @@
   <button
     id="btn"
     @click="jump"
-    class="btn h-12 w-28 text-white rounded-r-xl focus:outline-none"
+    class="btn h-12 w-28 text-white rounded-r-xl rounded-l-none focus:outline-none"
   >
     {{ label }}
   </button>

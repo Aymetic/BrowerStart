@@ -5,7 +5,7 @@
     placeholder="Type to search..."
     v-model="inputVal"
     v-on:input="valueChanged"
-    class="h-12 w-2/5 pl-3 rounded-l-xl focus:outline-none ring-4 ring-indigo-300"
+    class="h-12 w-2/5 pl-3 rounded-l-xl rounded-r-none focus:outline-none"
   />
 </template>
 
